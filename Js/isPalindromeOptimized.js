@@ -6,15 +6,13 @@ const isPalindrome = (str) => {
     end = strTrim.length - 1;
 
   while (start < end) {
-    // str[start] === str[end];
-    start === end;
-    // console.log(start, end);
-    console.log(strTrim[1], strTrim[3]);
-
+    if (strTrim[start] !== strTrim[end]) {
+        return false;
+    }
     start++;
     end--;
   }
-  return strTrim[start] === strTrim[end];
+  return true;
 };
 
-console.log("isPalindrome: ", isPalindrome("Maa m"));
+console.log("isPalindrome: ", isPalindrome("Maam"));
