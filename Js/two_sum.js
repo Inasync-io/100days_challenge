@@ -11,4 +11,17 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 
+// forEach method
+let arr = [2,7,11,15], target = 9;
+let output = [];
+
+arr.forEach((value, ouInx) => {
+    arr.forEach((_value, inInx) => {
+        if (value + _value === target) {
+            output.push(ouInx, inInx);
+        }
+    })
+    
+})
+console.log(output);
 
