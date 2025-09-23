@@ -7,7 +7,7 @@ for (let i = 0; i < arr.length; i++) {
             console.log("Inx value: ", i, j);
         }
     }
-    break;
+    // break;
 }
 
 
@@ -24,4 +24,5 @@ arr.forEach((value, ouInx) => {
     
 })
 console.log(output);
+
 
