@@ -6,7 +6,7 @@ const binarySearch = () => {
   console.log("Sorted Array:", orderArr);
 
   let start = 0,
-    end = arr.length - 1;
+    end = orderArr.length - 1;
 
   while (start <= end) {
     let mid = Math.floor((start + end) / 2);
